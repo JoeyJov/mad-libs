@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Joey | Mad Libs</title>
+  <!-- mobile viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- angular -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<!-- MaterializeCSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- personal stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<main><!-- Start main area -->
+    <nav><!-- start nav -->
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo center">Mad Libs</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav><!-- end nav -->
+    <div class="container">
+  		<div id="form">
+			<form id="input-fields">
+				<div class="row">
+					<div class="col s6">
+						Boy Name: <input ng-model="boyName" id="boyName" placeholder="Max Characters - 20" maxlength="20"></input><br>
+					</div>
+					<div class="col s6">
+						Sports Team: <input ng-model="sportsTeam" placeholder="Max Characters - 20" maxlength="20"></input><br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s6">
+						Sport: <input ng-model="sport" placeholder="Max Characters - 20" maxlength="20"></input><br>
+					</div>
+					<div class="col s6">
+						Food: <input ng-model="food" placeholder="Max Characters - 20" maxlength="20"></input><br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s6">
+						Body Part: <input ng-model="bodyPart" placeholder="Max Characters - 30" maxlength="30"></input><br>
+					</div>
+					<div class="col s6">
+						Thing: <input ng-model="thing" placeholder="Max Characters - 20" maxlength="20"></input><br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s6">
+						Liquid: <input ng-model="liquid" placeholder="Max Characters - 20" maxlength="20"></input><br>
+					</div>
+					<div class="col s6">
+						Place: <input ng-model="place" placeholder="Max Characters - 20" maxlength="20"></input><br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s6">
+						Fruit: <input ng-model="fruit" placeholder="Max Characters - 20" maxlength="20"></input><br>
+					</div>
+					<div class="col s6">
+						Activity: <input ng-model="activity" placeholder="Max Characters - 20" maxlength="20"></input><br>
+					</div>
+				</div>
+				<a id="paragraph-btn" class="waves-effect waves-light btn right">See your Paragraph Now!</a>
+			</form>
+			<h3 id="paragraph">{{ boyName }} was watching his favorite team, the {{ sportsTeam }} play {{ sport }}. But he was interupted when his {{ food }} spilled on his {{ bodyPart }}. At first he grabbed {{ thing }} but that didn't work so he tried {{ liquid }}. That worked! But he was still hungry so he walked over to {{ place }} to grab a {{ fruit }}. After getting his {{ fruit }}, the {{ sportsTeam }} finished their game so he went and watched {{ activity }}.</h3>
+		</div>
+	</div>
+    <footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+            Joey - SBHS
+            <a class="waves-effect waves-light btn right" href="https://github.com/JoeyJov/mad-libs/tree/gh-pages" target="_blank"><i class="material-icons left">cloud</i>Github</a>
+            </div>
+          </div>
+        </footer>
+	</main><!-- end main area -->
+	<!-- jquery script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- Materialize script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+	<!-- personal script -->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
