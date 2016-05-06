@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Joey | Mad Libs</title>
+  <!-- mobile viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- angular -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<!-- MaterializeCSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- personal stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<main><!-- Start main area -->
+    <nav><!-- start nav -->
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo center">Mad Libs</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav><!-- end nav -->
+    <div class="container">
+  		<div id="form">
+			<form id="input-fields">
+				Boy Name: <input ng-model="boyName" id="boyName" placeholder="Boy Name"></input><br>
+				Sports Team: <input ng-model="sportsTeam" placeholder="Sports Team"></input><br>
+				Sport: <input ng-model="sport" placeholder="Sport"></input><br>
+				Food: <input ng-model="food" placeholder="Food"></input><br>
+				Body Part: <input ng-model="bodyPart" placeholder="Body Part"></input><br>
+				Thing: <input ng-model="thing" placeholder="Thing"></input><br>
+				Liquid: <input ng-model="liquid" placeholder="Liquid"></input><br>
+				Place: <input ng-model="place" placeholder="Place"></input><br>
+				Fruit: <input ng-model="fruit" placeholder="Fruit"></input><br>
+				Activity: <input ng-model="activity" placeholder="Activity"></input><br>
+			</form>
+			<h3>{{ boyName }} was watching his favorite team, the {{ sportsTeam }} play {{ sport }}. But he was interupted when his {{ food }} spilled on his {{ bodyPart }}. At first he grabbed {{ thing }} but that didn't work so he tried {{ liquid }}. That worked! But he was still hungry so he walked over to {{ place }} to grab a {{ fruit }}. After getting his {{ fruit }}, the {{ sportsTeam }} finished their game so he went and watched {{ activity }}.</h3>
+		</div>
+	</div>
+    <footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="waves-effect waves-light btn right" src="https://github.com/JoeyJov/mad-libs/tree/gh-pages"><i class="material-icons left">cloud</i>Github</a>
+            </div>
+          </div>
+        </footer>
+	</main><!-- end main area -->
+	<!-- jquery script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- Materialize script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+	<!-- personal script -->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
